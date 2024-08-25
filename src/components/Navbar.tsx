@@ -13,7 +13,7 @@ import {
 } from "react-icons/fa";
 import { GoCopilot } from "react-icons/go";
 import { TbWorld } from "react-icons/tb";
-// import { socials } from "./Socials";
+import { socials } from "./Socials";
 interface NavLink {
   name: string;
   href: string;
@@ -61,10 +61,10 @@ const navLinks: NavLink[] = [
 const NavBar: React.FC = () => {
   return (
     <>
-      <nav className="sticky hidden left-0 top-0 sm:flex flex-col w-64 bg-white shadow-lg h-screen">
+      <nav className="sticky hidden left-0 top-0 md:flex flex-col w-80 bg-white shadow-lg h-screen">
         <div className="p-4 border-b flex gap-2">
           <MountainIcon className="h-6 w-6" />
-          <span className="text-black text-xl font-semibold">Alpha Romer</span>
+          <span className="text-black text-lg font-semibold">Alpha Romer Coma</span>
         </div>
         <div className="flex-1 overflow-y-auto py-4">
           {navLinks.map((link) => (
@@ -78,8 +78,24 @@ const NavBar: React.FC = () => {
             </Link>
           ))}
         </div>
+        <div className="p-4 border-t">
+          <div className="flex flex-col gap-4">
+            {socials.map((social) => (
+              <a
+                key={social.name}
+                href={social.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-500 hover:text-gray-700 flex gap-4"
+              >
+                {social.icon}
+                {social.name}
+              </a>
+            ))}
+          </div>
+        </div>
       </nav>
-      <header className="sticky block sm:hidden top-0 left-0 z-50 w-full bg-white shadow-sm dark:bg-gray-950 dark:text-gray-50">
+      <header className="sticky block md:hidden top-0 left-0 z-50 w-full bg-white shadow-sm dark:bg-gray-950 dark:text-gray-50">
         <div className="container flex h-16 items-center justify-between px-4 md:px-6">
           <div className="flex items-center gap-4 md:gap-2">
             <div className="flex items-center gap-2 md:gap-4">
@@ -104,7 +120,7 @@ const NavBar: React.FC = () => {
                         </Link>
                       ))}
                     </div>
-                    {/* <div className="flex gap-4 p-4 flex-col">
+                    <div className="flex gap-4 p-4 flex-col">
                     {socials.map((social) => (
                       <a
                         key={social.name}
@@ -117,7 +133,7 @@ const NavBar: React.FC = () => {
                         {social.name}
                       </a>
                     ))}
-                  </div> */}
+                    </div>
                   </div>
                 </SheetContent>
               </Sheet>

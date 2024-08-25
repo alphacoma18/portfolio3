@@ -1,10 +1,11 @@
 import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
 export default function Home() {
   return (
-    <span className="block sm:flex">
+    <span className="block md:flex w-full">
       <Navbar />
-      <main className="p-2 h-[400vh]">
-        <h1>Hello</h1>
+      <main className="h-[400vh] w-full">
+        <Hero />
       </main>
     </span>
   );
