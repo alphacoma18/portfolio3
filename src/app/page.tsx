@@ -1,13 +1,15 @@
-import Navbar from "@/components/Navbar";
+import Competencies from "@/components/Competencies";
 import Hero from "@/components/Hero";
-import Competency from "@/components/Competencies";
+import Navbar from "@/components/Navbar";
+import Recommendations from "@/components/Recommendations";
 export default function Home() {
   return (
     <span className="block md:flex w-full">
       <Navbar />
-      <main className="h-[400vh] w-full">
+      <main className="w-full">
         <Hero />
-        <Competency />
+        <Competencies />
+        <Recommendations />
       </main>
     </span>
   );

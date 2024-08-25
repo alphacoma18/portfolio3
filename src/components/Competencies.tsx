@@ -6,7 +6,7 @@ const coreCompetencies = [
     { title: 'Cloud Computing', icon: FaCode },
 ];
 
-const Competency = () => {
+const Competencies = () => {
     return (
         <section id="about" className="py-20 bg-white text-black">
             <div className="container mx-auto px-4">
@@ -30,4 +30,4 @@ const Competency = () => {
     );
 };
 
-export default Competency;
+export default Competencies;
