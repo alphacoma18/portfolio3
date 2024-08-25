@@ -61,7 +61,7 @@ const navLinks: NavLink[] = [
 const NavBar: React.FC = () => {
   return (
     <>
-      <nav className="sticky left-0 top-0 sm:flex flex-col w-64 bg-white shadow-lg h-screen">
+      <nav className="sticky hidden left-0 top-0 sm:flex flex-col w-64 bg-white shadow-lg h-screen">
         <div className="p-4 border-b flex gap-2">
           <MountainIcon className="h-6 w-6" />
           <span className="text-black text-xl font-semibold">Alpha Romer</span>
