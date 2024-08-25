@@ -61,51 +61,50 @@ const navLinks: NavLink[] = [
 const NavBar: React.FC = () => {
   return (
     <>
-      <div className="block sm:flex">
-        <nav className="hidden sm:flex flex-col w-64 bg-white shadow-lg h-screen">
-          <div className="p-4 border-b flex gap-1">
-            <MountainIcon className="h-6 w-6" />
-            <span className="text-black text-xl font-semibold">Alpha Romer</span>
-          </div>
-          <div className="flex-1 overflow-y-auto py-4">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="flex items-center space-x-4 text-black hover:bg-gray-100 px-4 py-2 rounded transition-colors duration-200"
-              >
-                {link.icon}
-                <span>{link.name}</span>
-              </Link>
-            ))}
-          </div>
-        </nav>
-        <header className="sticky block sm:hidden top-0 left-0 z-50 w-full bg-white shadow-sm dark:bg-gray-950 dark:text-gray-50">
-          <div className="container flex h-16 items-center justify-between px-4 md:px-6">
-            <div className="flex items-center gap-4 md:gap-2">
-              <div className="flex items-center gap-2 md:gap-4">
-                <Sheet>
-                  <SheetTrigger asChild>
-                    <Button className="md:hidden" size="icon" variant="outline">
-                      <MenuIcon className="h-6 w-6" />
-                      <span className="sr-only">Toggle navigation menu</span>
-                    </Button>
-                  </SheetTrigger>
-                  <SheetContent side="left">
-                    <div className="flex flex-col justify-between h-full">
-                      <div className="grid gap-4 p-4">
-                        {navLinks.map((link) => (
-                          <Link
-                            key={link.href}
-                            href={link.href}
-                            className="text-sm font-medium hover:underline flex gap-4 items-center"
-                          >
-                            {link.icon}
-                            {link.name}
-                          </Link>
-                        ))}
-                      </div>
-                      {/* <div className="flex gap-4 p-4 flex-col">
+      <nav className="sticky left-0 top-0 sm:flex flex-col w-64 bg-white shadow-lg h-screen">
+        <div className="p-4 border-b flex gap-2">
+          <MountainIcon className="h-6 w-6" />
+          <span className="text-black text-xl font-semibold">Alpha Romer</span>
+        </div>
+        <div className="flex-1 overflow-y-auto py-4">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="flex items-center space-x-4 text-black hover:bg-gray-100 px-4 py-2 rounded transition-colors duration-200"
+            >
+              {link.icon}
+              <span>{link.name}</span>
+            </Link>
+          ))}
+        </div>
+      </nav>
+      <header className="sticky block sm:hidden top-0 left-0 z-50 w-full bg-white shadow-sm dark:bg-gray-950 dark:text-gray-50">
+        <div className="container flex h-16 items-center justify-between px-4 md:px-6">
+          <div className="flex items-center gap-4 md:gap-2">
+            <div className="flex items-center gap-2 md:gap-4">
+              <Sheet>
+                <SheetTrigger asChild>
+                  <Button className="md:hidden" size="icon" variant="outline">
+                    <MenuIcon className="h-6 w-6" />
+                    <span className="sr-only">Toggle navigation menu</span>
+                  </Button>
+                </SheetTrigger>
+                <SheetContent side="left">
+                  <div className="flex flex-col justify-between h-full">
+                    <div className="grid gap-4 p-4">
+                      {navLinks.map((link) => (
+                        <Link
+                          key={link.href}
+                          href={link.href}
+                          className="text-sm font-medium hover:underline flex gap-4 items-center"
+                        >
+                          {link.icon}
+                          {link.name}
+                        </Link>
+                      ))}
+                    </div>
+                    {/* <div className="flex gap-4 p-4 flex-col">
                     {socials.map((social) => (
                       <a
                         key={social.name}
@@ -119,23 +118,19 @@ const NavBar: React.FC = () => {
                       </a>
                     ))}
                   </div> */}
-                    </div>
-                  </SheetContent>
-                </Sheet>
-              </div>
+                  </div>
+                </SheetContent>
+              </Sheet>
             </div>
-            <Link className="flex items-center gap-2" href="#">
-              <MountainIcon className="h-6 w-6" />
-            </Link>
-            <Link className="flex items-center gap-2" href="#">
-              <GoCopilot className="h-6 w-6" />
-            </Link>
           </div>
-        </header>
-        <main className="p-2">
-          <h1>Hello</h1>
-        </main>
-      </div>
+          <Link className="flex items-center gap-2" href="#">
+            <MountainIcon className="h-6 w-6" />
+          </Link>
+          <Link className="flex items-center gap-2" href="#">
+            <GoCopilot className="h-6 w-6" />
+          </Link>
+        </div>
+      </header>
     </>
 
   );

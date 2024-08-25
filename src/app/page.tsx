@@ -1,7 +1,11 @@
-import Image from "next/image";
-import Navbar from "@/components/component";
+import Navbar from "@/components/Navbar";
 export default function Home() {
   return (
-    <Navbar />
+    <span className="block sm:flex">
+      <Navbar />
+      <main className="p-2 h-[400vh]">
+        <h1>Hello</h1>
+      </main>
+    </span>
   );
 }
