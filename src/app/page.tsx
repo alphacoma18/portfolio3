@@ -5,6 +5,7 @@ import Projects from "@/components/Projects";
 import Recommendations from "@/components/Recommendations";
 import Affiliations from "@/components/Affiliations";
 import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
 export default function Home() {
   return (
     <span className="block md:flex w-full">
@@ -17,6 +18,7 @@ export default function Home() {
         <Recommendations />
         <Footer />
       </main>
+      <BackToTop />
     </span>
   );
 }
