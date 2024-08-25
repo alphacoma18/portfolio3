@@ -17,7 +17,7 @@ const Competencies = () => {
                     function.
                 </p>
                 <h3 className="text-2xl font-bold mb-4">Core Competencies</h3>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                     {coreCompetencies.map((competency, index) => (
                         <div key={index} className="flex items-center space-x-2 p-4 bg-gray-100 rounded-lg">
                             <competency.icon className="w-6 h-6" />
