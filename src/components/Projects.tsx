@@ -69,7 +69,7 @@ const Project: React.FC<Project> = ({ title, description, image, link }) => {
             <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                 <h3 className="text-2xl font-bold">{title}</h3>
-                <p className="mt-2 text-gray-300">{description}</p>
+                <p className="mt-2 text-balance text-gray-300">{description}</p>
             </div>
         </div>
     );
@@ -80,7 +80,7 @@ const Projects: React.FC = () => {
         <section id="recommendations" className="py-20 bg-white text-black">
             <div className="container mx-auto px-4">
                 <h2 className="text-3xl font-bold mb-8">Projects</h2>
-                <div className="container grid gap-4 px-4 md:grid-cols-2 md:px-6 lg:grid-cols-3">
+                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                     {projects.map((project, index) => (
                         <Project key={index} {...project} />
                     ))}

@@ -73,7 +73,7 @@ const Hero: React.FC = () => {
                 alt="Manila, Philippines"
                 className="absolute inset-0 w-full h-full object-center -z-10 blur-sm  brightness-50"
             />
-            <div className="container grid items-center gap-8 px-4 lg:grid-cols-2 md:px-6 z-50">
+            <div className="container grid items-center gap-8 px-4 md:grid-cols-2 md:px-6 z-50">
                 <div className="space-y-4">
                     <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-white">
                         Hey, I&apos;m Alpha!&nbsp;👋

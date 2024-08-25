@@ -15,7 +15,7 @@ const affiliations: Affiliation[] = [
     {
         company: "FEU Tech ACM",
         image: "/fit_acm.png",
-        role: ["Webmaster", "Former Director for Academics"],
+        role: ["Initiative Head"],
     },
     {
         company: "FEU Tech GDSC",
@@ -84,7 +84,7 @@ const Affiliation: React.FC<Affiliation> = ({ company, image, role }) => {
                 width={280}
             />
             <div className="absolute inset-0 flex items-center justify-center bg-gray-900/80 opacity-0 transition-opacity group-hover:opacity-100">
-                <div className="text-center text-gray-50">
+                <div className="text-center text-white">
                     <h3 className="text-lg font-semibold">{company}</h3>
                     {role.map((r) => (
                         <p key={r} className="text-sm">
@@ -102,7 +102,7 @@ const Affiliations: React.FC = () => {
         <section id="about" className="py-20 bg-white text-black">
             <div className="container mx-auto px-4">
                 <h2 className="text-3xl font-bold mb-8">Professional Affiliations</h2>
-                <div className="grid grid-cols-3 gap-6 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
+                <div className="grid grid-cols-2 gap-6 sm:grid-cols-4 lg:grid-cols-4 xl:grid-cols-6">
                     {affiliations.map((affiliation, index) => (
                         <Affiliation key={index} {...affiliation} />
                     ))}

@@ -61,7 +61,7 @@ const navLinks: NavLink[] = [
 const NavBar: React.FC = () => {
   return (
     <>
-      <nav className="sticky hidden left-0 top-0 md:flex flex-col w-80 bg-white shadow-lg h-screen">
+      <nav className="sticky hidden left-0 top-0 lg:flex flex-col w-80 bg-white shadow-lg h-screen">
         <div className="p-4 border-b flex gap-2">
           <MountainIcon className="h-6 w-6" />
           <span className="text-black text-lg font-semibold">Alpha Romer Coma</span>
@@ -95,13 +95,13 @@ const NavBar: React.FC = () => {
           </div>
         </div>
       </nav>
-      <header className="sticky block md:hidden top-0 left-0 z-50 w-full bg-white shadow-sm dark:bg-gray-950 dark:text-gray-50">
+      <header className="sticky block lg:hidden top-0 left-0 z-50 w-full bg-white shadow-sm dark:bg-gray-950 dark:text-gray-50">
         <div className="container flex h-16 items-center justify-between px-4 md:px-6">
           <div className="flex items-center gap-4 md:gap-2">
             <div className="flex items-center gap-2 md:gap-4">
               <Sheet>
                 <SheetTrigger asChild>
-                  <Button className="md:hidden" size="icon" variant="outline">
+                  <Button className="lg:hidden" size="icon" variant="outline">
                     <MenuIcon className="h-6 w-6" />
                     <span className="sr-only">Toggle navigation menu</span>
                   </Button>

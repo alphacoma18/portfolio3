@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 export default function Home() {
   return (
-    <span className="block md:flex w-full">
+    <span className="block lg:flex w-full">
       <Navbar />
       <main className="w-full">
         <Hero />
